@@ -1,5 +1,6 @@
 var utils = require('../../utils/util.js');
 var app = getApp();
+var that;
 Page({
   /**
    * 相关数据
@@ -16,7 +17,7 @@ Page({
       width: 30,
       height: 30
     }],
-
+    //地图上的控制器
     controls: [{
       id: 1,
       iconPath: '/resources/images/icon_m_location.png',
@@ -29,28 +30,43 @@ Page({
       clickable: true
     }]
   },
+
   //监听页面加载
   onLoad: function () {
-    console.log('refreshScHeight=' + utils.getScreenHeight());
-    // refreshScHeight();
+    refreshmaph();
+    that = this;
+    wx.getSystemInfo({
+      success: function (res) {
+        that.setData({
+          scheight: res.windowHeight,
+        })
+      }
+    });
   },
+  //视野发生变化时触发
   regionchange(e) {
     console.log(e.type)
   },
-  //点击了货车图标
+  //点击了货车图标的回调函数
   markertap(e) {
     console.log(e.markerId)
   },
+  //控制器点击的回调函数
   controltap(e) {
     console.log(e.controlId)
   },
-  //刷地图的高度
-  refreshScHeight: function () {
-    console.log('refreshScHeight=' + utils.getScreenHeight());
-    this.setData({
-      scheight: getScreenHeight(),
-    })
-  },
-
 
 })
+
+/**
+ * 动态设置地图的高度
+ */
+function refreshmaph() {
+  wx.getSystemInfo({
+    success: function (res) {
+      that.setData({
+        scheight: res.windowHeight,
+      })
+    }
+  });
+}
