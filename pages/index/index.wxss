@@ -1,0 +1,150 @@
+/*start -顶部搜索框部分*/
+
+.search-bar {
+  width: 700rpx;
+  height: 80rpx;
+  position: fixed;
+  left: 25rpx;
+  top: 20rpx;
+  background-color: white;
+  border-radius: 10rpx;
+}
+
+.search-bar>input {
+  height: 70rpx;
+  width: 470rpx;
+  display: inline-block;
+  /*background-color: red;*/
+  margin-left: 5rpx;
+  margin-bottom: 5rpx;
+  font-size: 28rpx;
+}
+
+.search-bar>.search-btn {
+  display: inline-block;
+  height: 80rpx;
+  width: 80rpx;
+  background-image: url('/resources/images/icon-search-bg.png');
+  background-repeat: no-repeat;
+  background-size: 60rpx 60rpx;
+  background-position: 10rpx 10rpx;
+}
+
+.search-bar>.car-list-btn {
+  position: absolute;
+  right: 5rpx;
+  /*background-color: rosybrown;*/
+  display: inline-block;
+  width: 140rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: right;
+  background-image: url('/resources/images/icon-car-list.png');
+  background-repeat: no-repeat;
+  background-size: 50rpx 50rpx;
+  background-position: 10rpx 15rpx;
+}
+
+/*end -顶部搜索框部分*/
+
+/*start 底部导航的部分*/
+
+.footer-bar {
+  width: 700rpx;
+  height: 80rpx;
+  position: fixed;
+  left: 25rpx;
+  bottom: 20rpx;
+  background-color: #f5f5f5;
+  border-radius: 10rpx;
+}
+
+.footer-bar>view {
+  font-weight: bold;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 80rpx;
+  width: 172rpx;
+  height: 80rpx;
+  background-color: white;
+  display: inline-block;
+  margin-left: 2rpx;
+}
+
+.footer-bar>view:first-child {
+  margin-left: 0rpx;
+}
+
+.footer-bar>view::last-child {
+  margin-right: 0rpx;
+}
+
+/*end 底部导航的部分*/
+
+/*start 右边控制器部分*/
+
+.right-bar {
+  width: 60rpx;
+  height: 180rpx;
+  position: fixed;
+  right: 10rpx;
+  top: 50%;
+  background-color: #f5f5f5;
+  border-radius: 10rpx;
+}
+
+.ctrl-plus-btn {
+  border-radius: 10rpx 10rpx 0 0;
+  background-color: white;
+  width: 60rpx;
+  height: 59rpx;
+  background-image: url('/resources/images/icon_map_plus.png');
+  background-size: 50rpx 50rpx;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ctrl-add-btn {
+  margin-top: 2rpx;
+  background-color: white;
+  width: 60rpx;
+  height: 59rpx;
+  background-image: url('/resources/images/icon_map_add.png');
+  background-size: 70rpx 50rpx;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ctrl-locat-btn {
+  margin-top: 2rpx;
+  border-radius: 0 0 10rpx 10rpx;
+  background-color: white;
+  width: 60rpx;
+  height: 59rpx;
+  background-image: url('/resources/images/icon_request_location.png');
+  background-size: 60rpx 60rpx;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*end 右边控制器部分*/
+
+/*start 车辆详情信息*/
+
+.car-detail {
+  width: 700rpx;
+  height: 120rpx;
+  position: fixed;
+  left: 25rpx;
+  bottom: 105rpx;
+  background-color: white;
+  border-radius: 10rpx;
+}
+
+.car-detail>.detail-cancel {
+  position: absolute;
+  right: -5rpx;
+  top: -5rpx;
+}
+
+/*end 车辆详情信息*/

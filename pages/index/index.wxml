@@ -1,10 +1,41 @@
-<map id="map" 
- longitude="113.324520" latitude="23.099994" 
- scale="14" controls="{{controls}}"
- bindcontroltap="controltap" 
- markers="{{markers}}" 
- bindmarkertap="markertap" 
- bindregionchange="regionchange" 
- show-location 
- style="width: 100%; height: {{scheight}}px;">
+
+<!--start 地图部分-->
+<map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 100%; height: {{scheight}}px;">
 </map>
+
+<!--end 地图部分-->
+
+<!--start 搜索部分-->
+<view class="search-bar">
+  <view class="search-btn" bindtap="searchCity">
+  </view>
+  <input placeholder="请输入城市名称" value="{{ city }}" />
+  <view class="car-list-btn" bindtap="toCarList">
+    列表
+  </view>
+</view>
+
+<!--end 搜索部分-->
+
+<!--start 底部导航的部分-->
+<view class="footer-bar">
+  <view>车辆类型</view>
+  <view>车辆长度</view>
+  <view>发布货源</view>
+  <view>个人中心</view>
+</view>
+
+<!--end 底部导航的部分-->
+
+<!--start 右边的控制器部分-->
+<view class="right-bar">
+  <view class="ctrl-plus-btn" bindtap="mapPlus"></view>
+  <view class="ctrl-add-btn" bindtap="mapAdd"></view>
+  <view class="ctrl-locat-btn" bindtap="refreshLocation"></view>
+</view>
+
+<!--end 右边的控制器部分-->
+<view class="car-detail" wx:if="{{carDetal.isShowDetail}}">
+  点击的车辆是是:{{carDetal.title}}
+  <icon class="detail-cancel" type="cancel" bindtap="closeDetail" />
+</view>

@@ -1,0 +1,11 @@
+<view class="top-sort">
+  <view>
+    <view>车辆类型</view>
+  </view>
+  <view>
+    <view>车辆长度</view>
+  </view>
+</view>
+
+<!--start 车辆列表-->
+<view class="caritem"></view>
