@@ -1,0 +1,24 @@
+.car-type-container {
+  display: inline-block;
+  width: 200rpx;
+  height: 220rpx;
+  background-color: #e4e3e3;
+  border-radius: 10rpx;
+  margin-left: 37.5rpx;
+  margin-top: 37.5rpx;
+}
+
+.car-type-container>image {
+  margin: 1rpx;
+  width: 200rpx;
+  height: 180rpx;
+  border-radius: 10rpx 10rpx 0rpx 0rpx;
+}
+
+.car-type-container>.car-type-name {
+  width: 200rpx;
+  height: 40rpx;
+  text-align: center;
+  font-size: 28rpx;
+  border-radius: 0rpx 0rpx 10rpx 10rpx;
+}

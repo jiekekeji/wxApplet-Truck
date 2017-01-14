@@ -19,7 +19,9 @@ Page({
       isShowDetail: false,
       title: '123'
 
-    }
+    },
+    cartype: 0,//当前车辆类型
+    carlength: 0//当前的车辆长度
 
   },
 
@@ -114,6 +116,20 @@ Page({
     this.setData({
       'carDetal.isShowDetail': false
     })
+  },
+  //选择车辆类型
+  selectCarType: function () {
+    var murl = "/pages/cartype/cartype?comefrom=" + 1;
+    wx.navigateTo({
+      url: murl
+    });
+  },
+  //选择车辆长度
+  selectCarLength: function () {
+    var murl = "/pages/carlength/carlength";
+    wx.navigateTo({
+      url: murl
+    });
   }
 })
 
@@ -126,6 +142,7 @@ function refreshmaph() {
       that.setData({
         scheight: res.windowHeight,
       })
+      console.log(res.windowWidth, );
     }
   });
 }
@@ -141,6 +158,7 @@ function refreshLocation() {
         longitude: res.longitude,
         latitude: res.latitude,
       });
+      console.log(res.longitude + " " + res.latitude);
       //定位成功后重新获取附件的货车列表
       getNearCarByLocation();
     }

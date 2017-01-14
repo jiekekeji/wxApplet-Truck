@@ -1,22 +1,87 @@
+/*start 分类*/
+
 .top-sort {
   width: 100%;
   height: 80rpx;
+  position: fixed;
+  left: 0rpx;
+  right: 0rpx;
 }
 
 .top-sort>view {
-  width: 50%;
+  width: 374rpx;
   height: 80rpx;
   display: inline-block;
   background-color: #f5f5f5;
   font-size: 30rpx;
   text-align: center;
-  line-height: 60rpx;
+  line-height: 80rpx;
+  background-image: url('/resources/images/icon_sort-san-jiao.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50rpx;
+  background-size: 40rpx 40rpx;
 }
+
+.top-sort>.car-length {
+  float: right;
+}
+
+.top-zahnwei {
+  width: 100%;
+  height: 80rpx;
+}
+
+/*end 分类*/
 
 /*start 列表*/
 
+.car-list-container {
+}
+
 .caritem {
-  height: 180rpx;
+  height: 200rpx;
   width: 100%;
   border-bottom: 0.5px #f5f5f5 solid;
 }
+
+.caritem>.car-container {
+  height: 100%;
+  width: 100%;
+  margin: 2rpx;
+}
+
+.car-container>image {
+  border-radius: 10rpx;
+  width: 196rpx;
+  height: 196rpx;
+}
+
+.car-container>.car-detail {
+  font-size: 28rpx;
+  width: 550rpx;
+  display: inline-block;
+  float: right;
+}
+
+.car-detail view {
+  height: 50rpx;
+  line-height: 50rpx;
+  width: 100%;
+}
+
+.first-line>.car-number {
+  height: 100%;
+  width: 400rpx;
+  display: inline-block;
+}
+
+.first-line>.car-distance {
+  font-size: 26rpx;
+  color: limegreen;
+  height: 100%;
+  width: 150rpx;
+  display: inline-block;
+  text-align: center;
+}
+
+/*end 列表*/

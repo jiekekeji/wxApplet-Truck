@@ -1,11 +1,45 @@
 <view class="top-sort">
-  <view>
-    <view>车辆类型</view>
-  </view>
-  <view>
-    <view>车辆长度</view>
+  <view class="car-type" bindtap="selectCarType">车辆类型{{cartype}}</view>
+  <view class="car-length" bindtap="selectCarLength">车辆长度{{carlength}}</view>
+</view>
+
+<!--<start 占位-->
+<view class="top-zahnwei">
+</view>
+
+<!--<end 占位-->
+
+<!--start 车辆列表-->
+<view class="car-list-container">
+  <view class="caritem" wx:for="{{carlist}}">
+    <view class="car-container ">
+      <image src="/resources/images/car-photo.jpeg "></image>
+      <view class="car-detail ">
+        <view class="first-line ">
+          <view class="car-number ">
+            车牌:琼A1234
+          </view>
+          <view class="car-distance ">
+            30光年
+          </view>
+        </view>
+        <view class="second-line ">电话:
+          <a href="tel:19982029334 ">
+            19982029334{{longitude}}
+          </a> 
+        </view>
+        <view class="third-line first-line ">
+          <view class="car-number ">
+            车长：{{item.lenght}}
+          </view>
+          <view class="car-distance ">
+            空闲
+          </view>
+        </view>
+        <view class="fourth-line ">位置:宇宙太阳系月球第第20个坑</view>
+      </view>
+    </view>
   </view>
 </view>
 
-<!--start 车辆列表-->
-<view class="caritem"></view>
+<!--end 车辆列表-->

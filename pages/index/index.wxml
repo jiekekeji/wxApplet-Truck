@@ -19,8 +19,8 @@
 
 <!--start 底部导航的部分-->
 <view class="footer-bar">
-  <view>车辆类型</view>
-  <view>车辆长度</view>
+  <view bindtap="selectCarType">车辆类型{{cartype}}</view>
+  <view bindtap="selectCarLength">车辆长度{{carlength}}</view>
   <view>发布货源</view>
   <view>个人中心</view>
 </view>

@@ -1,0 +1,8 @@
+.car-length-container {
+  width: 90%;
+  height: 100rpx;
+  border-bottom: 2rpx solid gray;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 100rpx;
+}

@@ -1,0 +1,7 @@
+<view class="car-type-container" wx:for="{{cartypeList}}"
+ bindtap="selectOk" data-index="{{index}}">
+  <image src="/resources/images/car-photo.jpeg" />
+  <view class="car-type-name">
+    类型{{item.type}}
+  </view>
+</view>

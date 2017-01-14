@@ -1,0 +1,4 @@
+<view class="car-length-container" wx:for="{{lengthlist}}"
+bindtap="selectOk" data-index="{{index}}">
+  {{item.lenght}}
+</view>

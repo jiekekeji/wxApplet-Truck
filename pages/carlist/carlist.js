@@ -6,7 +6,9 @@ Page({
     data: {
         longitude: 110.35,
         latitude: 20.02,
-        varlist: []
+        carlist: [{ id: 1, lenght: 123 }, { id: 1, lenght: 123 }],//列表
+        cartype: 0,//当前车辆类型
+        carlength: 0,//当前的车辆长度
     },
 
     //*********页面相关回调函数**********//
@@ -20,9 +22,35 @@ Page({
         console.log(option.longitude + " " + this.data.latitude);
         getCarsData();
 
+    },
+
+    //页面返回
+    onShow: function () {
+        getCarsData();
+    },
+
+    //车辆类选择
+    selectCarType: function () {
+        var murl = "/pages/cartype/cartype?comefrom=" + 2;
+        wx.navigateTo({
+            url: murl
+        });
+    },
+    //选择车辆长度
+    selectCarLength: function () {
+        var murl = "/pages/carlength/carlength";
+        wx.navigateTo({
+            url: murl
+        });
     }
 })
 
+/**
+ * 初始化数据
+ */
+function initData(option) {
+
+}
 
 /**
  * 获取车辆列表
@@ -34,10 +62,18 @@ function getCarsData() {
         duration: 10000
     });
 
-    for (var i; i < 20; i++) {
-
+    var tempCarList = [];
+    //根据车辆类型什么的获取车辆列表
+    for (var i = 0; i < 10; i++) {
+        var car = {};
+        car.id = i;
+        car.lenght = (Math.random() * 10).toFixed(1);
+        tempCarList.push(car);
     }
 
+    that.setData({
+        carlist: tempCarList
+    });
 
     setTimeout(function () {
         wx.hideToast()
