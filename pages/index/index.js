@@ -130,6 +130,13 @@ Page({
     wx.navigateTo({
       url: murl
     });
+  },
+  //发布货源
+  releaseGoods: function () {
+    var murl = "/pages/releasegoods/releasegoods";
+    wx.navigateTo({
+      url: murl
+    });
   }
 })
 

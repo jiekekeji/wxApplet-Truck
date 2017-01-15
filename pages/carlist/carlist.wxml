@@ -11,7 +11,8 @@
 
 <!--start 车辆列表-->
 <view class="car-list-container">
-  <view class="caritem" wx:for="{{carlist}}">
+  <view class="caritem" wx:for="{{carlist}}" bindtap="carItemTap"
+   data-index="{{index}}">
     <view class="car-container ">
       <image src="/resources/images/car-photo.jpeg "></image>
       <view class="car-detail ">

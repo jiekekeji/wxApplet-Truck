@@ -21,7 +21,7 @@
 <view class="footer-bar">
   <view bindtap="selectCarType">车辆类型{{cartype}}</view>
   <view bindtap="selectCarLength">车辆长度{{carlength}}</view>
-  <view>发布货源</view>
+  <view bindtap="releaseGoods">发布货源</view>
   <view>个人中心</view>
 </view>
 

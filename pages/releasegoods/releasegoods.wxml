@@ -1,0 +1,10 @@
+<view class="top-sort">
+  <view class="car-type" bindtap="selectCarType">起点{{cartype}}</view>
+  <view class="car-length" bindtap="selectCarLength">终点{{carlength}}</view>
+  <view class="car-type" bindtap="selectCarType">车辆类型{{cartype}}</view>
+  <view class="car-length" bindtap="selectCarLength">车辆长度{{carlength}}</view>
+</view>
+<!--占位-->
+<view class="top-zahnwei">
+  
+</view>

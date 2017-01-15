@@ -1,0 +1,64 @@
+.car-img {
+  width: 100%;
+  height: 500rpx;
+}
+
+/*satr 车辆信息1*/
+
+.car-info1 {
+  display: table;
+  font-size: 30rpx;
+  width: 750rpx;
+  border-top: 2rpx solid lightgray;
+}
+
+.car-info1>view {
+  width: 50%;
+  height: 70rpx;
+  display: inline-block;
+  line-height: 70rpx;
+  text-indent: 20rpx;
+}
+
+/*satr 车辆信息2*/
+
+.car-info2 {
+  margin-top: 30rpx;
+  display: table;
+  font-size: 30rpx;
+  width: 750rpx;
+}
+
+.car-info2>view {
+  width: 100%;
+  height: 70rpx;
+  display: inline-block;
+  line-height: 70rpx;
+  text-indent: 20rpx;
+}
+
+.car-info3 {
+  border-bottom: 1rpx solid lightgray;
+}
+
+/*start 其他车辆信息*/
+
+.car-other {
+  display: table;
+  font-size: 30rpx;
+  width: 750rpx;
+  border-top: 2rpx solid lightgray;
+}
+
+.car-other>view {
+  width: 374rpx;
+  height: 70rpx;
+  display: inline-block;
+  line-height: 70rpx;
+  text-indent: 20rpx;
+  text-align: center;
+}
+
+.car-other>view:first-child {
+  border-right: 2rpx solid lightgray;
+}

@@ -1,0 +1,41 @@
+
+<!--start 车辆图片-->
+<image class="car-img" src="/resources/images/car-photo.jpeg"></image>
+
+<!--end 车辆图片-->
+
+<!--start 车辆信息1-->
+<view class="car-info1">
+  <view>车牌：a534341</view>
+  <view>1233公里</view>
+  <view>电话：1223345555</view>
+  <view>空闲</view>
+</view>
+
+<!--end 车辆信息1-->
+
+<!--start 车辆信息2-->
+<view class="car-info2">
+  <view>车辆长度：20 米</view>
+  <view>车辆类型：小汽车</view>
+  <view>额定载重:1000KG</view>
+  <view>常驻城市:海口市</view>
+</view>
+
+<!--end 车辆信息2-->
+
+<!--start 车辆信息3-->
+<view class="car-info2 car-info3">
+  <view>车辆位置：海口市龙华区金垦路xx大厦</view>
+  <view>车辆说明：海口20米大型小货车</view>
+</view>
+
+<!--end 车辆信息3-->
+
+<!--start 其他车辆信息-->
+<view class="car-other">
+  <view>拨打电话</view>
+  <view>反馈错误</view>
+</view>
+
+<!--end 其他车辆信息-->

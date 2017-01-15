@@ -42,6 +42,15 @@ Page({
         wx.navigateTo({
             url: murl
         });
+    },
+    //车辆列表点击事件,跳转到车辆详情
+    carItemTap: function (e) {
+        var index = e.currentTarget.dataset.index;
+        var id = this.data.carlist[index];
+        var murl = "/pages/cardetail/cardetail?id="+id;
+        wx.navigateTo({
+            url: murl
+        });
     }
 })
 
@@ -77,5 +86,5 @@ function getCarsData() {
 
     setTimeout(function () {
         wx.hideToast()
-    }, 2000)
+    }, 1000)
 }

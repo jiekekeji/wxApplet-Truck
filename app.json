@@ -4,6 +4,8 @@
     "pages/carlist/carlist",
     "pages/cartype/cartype",
     "pages/carlength/carlength",
+    "pages/cardetail/cardetail",
+    "pages/releasegoods/releasegoods",
     "pages/logs/logs"
   ],
   "window": {
