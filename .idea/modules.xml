@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/114TruckOnline.iml" filepath="$PROJECT_DIR$/.idea/114TruckOnline.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/wxApplet-Truck.iml" filepath="$PROJECT_DIR$/.idea/wxApplet-Truck.iml" />
     </modules>
   </component>
 </project>
